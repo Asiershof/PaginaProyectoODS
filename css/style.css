@@ -1,0 +1,334 @@
+/*Estilos a nivel general*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#general {
+    width: 100%;
+}
+
+header {
+    box-shadow: 0px 4px 7px #000000ba;
+    height: 144px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #b9b9b9, #949494);
+}
+
+header #logo {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+header #logo img {
+    height: 80%;
+    object-fit: contain;
+    margin-left: 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 0px;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+#menu li {
+    text-align: center;
+    position: relative;
+}
+
+#menu li>a,
+#menu li>label>a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 24pt;
+    font-weight: 600;
+}
+
+nav>ul>li>a:hover,
+nav>ul>li>label>a:hover,
+nav ul li:hover>a,
+nav ul li:hover>label>a {
+    text-shadow: 2px 2px 4px #000000bf;
+    transition: 0.2s ease-in-out;
+}
+
+nav ul ul {
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+nav ul ul li {
+    padding: 10px;
+}
+
+nav ul ul li a {
+    color: white;
+    font-size: 18pt;
+    text-decoration: none;
+}
+
+nav ul ul li:hover {
+    background-color: #8d8d8de6;
+}
+
+#checkbox,
+#submenu-checkbox {
+    display: none;
+}
+
+article {
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    padding: 40px;
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px #0000004d;
+    text-align: center;
+}
+
+article h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+    letter-spacing: 3px;
+    color: #e63946;
+}
+
+article p {
+    font-size: 25px;
+    line-height: 1.6;
+    margin: 30px;
+    color: #bcbcbc;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#video_coche {
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px #0000004d;
+}
+
+footer {
+    background: linear-gradient(to top, #b9b9b9, #949494);
+    box-shadow: 0px -4px 7px #000000ba;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#datos_footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ODS img,
+#ODS a {
+    height: 75px;
+    width: 75px;
+}
+
+#ODS,
+#redes,
+#musica {
+    flex: 1 0 30%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+#redes {
+    justify-content: space-evenly;
+}
+
+#redes img,
+#redes a {
+    height: 50px;
+    width: 50px;
+}
+
+#copy {
+    margin-top: 20px;
+    font-size: larger;
+}
+
+/*Estilos Ordenador*/
+@media (min-width: 1024px) {
+    #menu>li {
+        margin-left: 20px;
+    }
+
+    nav ul li:hover>ul {
+        max-height: 230px;
+        opacity: 1;
+    }
+
+    nav ul ul {
+        background: linear-gradient(to bottom, #949494, #b9b9b9);
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+
+/*Estilos para tablet y movil*/
+@media (max-width: 1023px) {
+    nav {
+        margin-right: 40px;
+    }
+
+    #lista {
+        position: absolute;
+        top: 144px;
+        background: linear-gradient(to top, #b9b9b9, #949494);
+        width: 100%;
+        left: 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        overflow: hidden;
+        height: auto;
+        opacity: 0;
+    }
+
+    #lista ul {
+        display: flex;
+        width: 100%;
+        margin-bottom: 30px;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #lista ul li a {
+        font-size: 2em;
+    }
+
+    #lista ul ul li {
+        padding: 0px;
+    }
+
+    #checkbox:checked~#lista {
+        transform: scaleY(1);
+        opacity: 1;
+        transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    }
+
+    .toggle {
+        width: 65px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+        transition-duration: .5s;
+    }
+
+    .bars {
+        width: 100%;
+        height: 4px;
+        background-color: #333333;
+        border-radius: 4px;
+    }
+
+    #bar2 {
+        transition: none;
+    }
+
+    #bar1,
+    #bar3 {
+        width: 90%;
+    }
+
+    #checkbox:checked+.toggle {
+        transition-duration: .5s;
+        transform: rotate(180deg);
+    }
+
+    #checkbox:checked+.toggle .bars {
+        position: absolute;
+        transition-duration: .5s;
+    }
+
+    #checkbox:checked+.toggle #bar1 {
+        width: 100%;
+        transform: rotate(45deg);
+    }
+
+    #checkbox:checked+.toggle #bar2 {
+        transform: scaleX(0);
+    }
+
+    #checkbox:checked+.toggle #bar3 {
+        width: 100%;
+        transform: rotate(-45deg);
+    }
+
+    #menu .submenu {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .submenu-toggle:checked~.submenu {
+        position: relative;
+        max-height: 240px;
+        opacity: 1;
+        margin-bottom: 0;
+        transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    }
+
+    .submenu-toggle {
+        display: none;
+    }
+
+    .submenu-label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .arrow {
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid #000;
+        margin-left: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .submenu-toggle:checked+.submenu-label .arrow {
+        transform: rotate(180deg);
+    }
+}

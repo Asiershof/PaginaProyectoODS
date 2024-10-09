@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros coches</title>
+    <link rel="stylesheet" href="../css/style_comprar_coche.css">
+</head>
+<body>
+    <div id="general">
+        <header>
+            <div id="logo">
+                <a href="../index.html"><img src="../imagenes/logo.png" alt="logo"></a>
+            </div>
+            <nav>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle">
+                    <div class="bars" id="bar1"></div>
+                    <div class="bars" id="bar2"></div>
+                    <div class="bars" id="bar3"></div>
+                </label>
+                <div id="lista">
+                    <ul id="menu">
+                        <li><a href="../index.html">INICIO</a></li>
+                        <li>
+                            <input type="checkbox" id="submenu-checkbox" class="submenu-toggle">
+                            <label for="submenu-checkbox" class="submenu-label">
+                                <a href="nuestros_coches.html">NUESTROS COCHES</a>
+                                <span class="arrow"></span>
+                            </label>
+                            <ul class="submenu">
+                                <li><a href="nuestros_coches.html#V6">V6</a></li>
+                                <li><a href="nuestros_coches.html#V8">V8</a></li>
+                                <li><a href="nuestros_coches.html#V12">V12</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="comprar_coche.html">COMPRA TU COCHE</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div id="formulario">
+            <h1>Formulario de Compra</h1>
+            <form>
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                <label for="coche">Elige el coche que quieras comprar:</label>
+                <select id="coche" name="coche" required>
+                    <option value="">-- Selecciona un coche --</option>
+                    <option value="coche1">RAM 1500 TRX 4X4 (120.000€)</option>
+                    <option value="coche2">FORD F-150 RAPTOR (114.500€)</option>
+                    <option value="coche3">CADILLAC ESCALADE V AWD (146.000€)</option>
+                    <option value="coche4">DODGE DURANGO SRT AWD (169.000€)</option>
+                    <option value="coche5">JEEP WRANGLER (148.000€)</option>
+                    <option value="coche6">JEEP GRAND WAGOONER 4X4 (159.000€)</option>
+                    <option value="coche7">MERCEDES-BENZ G550 4X4 (170.000€)</option>
+                    <option value="coche8">BMW X5 M (177.000€)</option>
+                    <option value="coche9">FORD BRONCO RAPTO (148.500€)</option>
+                    <option value="coche10">HEVROLET SILVERADO 4WD ZR2 (130.000€)</option>
+                </select>
+                <label for="color">Color deseado:</label>
+                <input type="color" id="color" name="color" value="#000000">
+                <label>Método de pago:</label>
+                <div class="opcionesPago">
+                    <label class="pago">
+                        <input type="radio" name="metodoPago" value="tarjeta" required>
+                        Tarjeta de Crédito
+                    </label>
+                    <label class="pago">
+                        <input type="radio" name="metodoPago" value="transferencia" required>
+                        Transferencia Bancaria
+                    </label>
+                    <label class="pago">
+                        <input type="radio" name="metodoPago" value="financiacion" required>
+                        Financiación
+                    </label>
+                </div>
+                <label for="comentarios">Comentarios:</label>    
+                <textarea id="comentarios" name="comentarios" placeholder="Escribe cualquier comentario adicional"></textarea>
+                <button type="submit" class="botonEnviar">Enviar</button>
+            </form>
+        </div>
+        <footer>
+            <div id="datos_footer">
+                <div id="ODS">
+                    <a href="https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/"><img src="../imagenes/ODS.png" alt="ODS"></a>
+                </div>
+                <div id="redes">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../imagenes/facebook.svg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../imagenes/instagram.svg" alt="Instagram"></a>
+                    <a href="https://x.com/" target="_blank"><img src="../imagenes/x.svg"  alt="Twitter"></a>
+                </div>
+                <div id="musica">
+                    <audio src="../audios/Born_To_Be_Wild.mp3" preload="auto" controls></audio>
+                </div>
+            </div>
+            <div id="copy">
+                <p>&copy;Asier Crespo 2024</p>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

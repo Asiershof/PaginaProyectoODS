@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1EVA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="general">
+        <header>
+            <div id="logo">
+                <a href="index.html"><img src="imagenes/logo.png" alt="logo"></a>
+            </div>
+            <nav>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle">
+                    <div class="bars" id="bar1"></div>
+                    <div class="bars" id="bar2"></div>
+                    <div class="bars" id="bar3"></div>
+                </label>
+                <div id="lista">
+                    <ul id="menu">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li>
+                            <input type="checkbox" id="submenu-checkbox" class="submenu-toggle">
+                            <label for="submenu-checkbox" class="submenu-label">
+                                <a href="paginas/nuestros_coches.html">NUESTROS COCHES</a>
+                                <span class="arrow"></span>
+                            </label>
+                            <ul class="submenu">
+                                <li><a href="paginas/nuestros_coches.html#V6">V6</a></li>
+                                <li><a href="paginas/nuestros_coches.html#V8">V8</a></li>
+                                <li><a href="paginas/nuestros_coches.html#V12">V12</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="paginas/comprar_coche.html">COMPRA TU COCHE</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <article>
+            <h1>LA POTENCIA QUE DEFINE EL FUTURO</h1>
+            <p>Nuestros coches te hacen sentirte uno con la carretera. Son la definición de supremacía al volante, pura fuerza, sin límites. Si los ricos pueden contaminar el planeta, ¿por qué tú no puedes hacerlo incluso más que ellos? Descubre que se siente al ser el líder sobre las cuatro ruedas.</p>
+        </article>
+        <section>
+            <video id="video_coche" autoplay loop muted preload="auto">
+                <source src="videos/video_coche.webm" type="video/webm">
+                <source src="videos/video_coche.mp4" type="video/mp4">
+            </video>
+        </section>
+        <footer>
+            <div id="datos_footer">
+                <div id="ODS">
+                    <a href="https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/"><img src="imagenes/ODS.png" alt="ODS"></a>
+                </div>
+                <div id="redes">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="imagenes/facebook.svg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="imagenes/instagram.svg" alt="Instagram"></a>
+                    <a href="https://x.com/" target="_blank"><img src="imagenes/x.svg"  alt="Twitter"></a>
+                </div>
+                <div id="musica">
+                    <audio src="audios/Born_To_Be_Wild.mp3" preload="auto" controls></audio>
+                </div>
+            </div>
+            <div id="copy">
+                <p>&copy;Asier Crespo 2024</p>
+            </div>
+        </footer>
+        <script>
+            lucide.createIcons();
+        </script>
+        <script src="js/script.js"></script>
+    </div>
+</body>
+</html>
