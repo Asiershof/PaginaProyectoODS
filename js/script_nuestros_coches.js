@@ -184,6 +184,13 @@ const audioManager = (() => {
       setupScrollButton
     };
   })();
+
+  // Sección 3: Configuración menú movil
+  function quitarMenu() {
+    let menuCheckbox = document.getElementById('checkbox');
+    menuCheckbox.checked = false;
+  }
+
   
   // Inicialización cuando el DOM está listo
   document.addEventListener('DOMContentLoaded', () => {
@@ -191,4 +198,5 @@ const audioManager = (() => {
     audioManager.preloadAudios();
     audioManager.setupAudioListeners();
     scrollManager.setupScrollButton();
+    mobileMenuManager.setupMobileMenu();
   });
