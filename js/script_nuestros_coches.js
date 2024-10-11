@@ -186,7 +186,7 @@ const audioManager = (() => {
   })();
 
   // Sección 3: Configuración menú movil
-  function quitarMenu() {
+  function setupSubmenuClickHandler() {
     let menuCheckbox = document.getElementById('checkbox');
     menuCheckbox.checked = false;
   }

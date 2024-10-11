@@ -161,7 +161,7 @@ nav ul ul li:hover {
 #formulario .botonEnviar {
   width: 100%;
   padding: 10px;
-  background-color: #f00;
+  background-color: #8b8b8b;
   color: white;
   border: none;
   border-radius: 5px;
@@ -171,7 +171,7 @@ nav ul ul li:hover {
 }
 
 #formulario .botonEnviar:hover {
-  background-color: #c00;
+  background-color: #777777;
 }
 
 footer {
