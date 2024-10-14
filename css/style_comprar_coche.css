@@ -358,10 +358,6 @@ footer {
     cursor: pointer;
   }
 
-  #formulario {
-    width: 75%;
-  }
-
   .arrow {
     width: 0;
     height: 0;
@@ -374,5 +370,9 @@ footer {
 
   .submenu-toggle:checked+.submenu-label .arrow {
     transform: rotate(180deg);
+  }
+
+  #formulario {
+    width: 75%;
   }
 }
