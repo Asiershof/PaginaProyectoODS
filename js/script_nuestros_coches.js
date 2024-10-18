@@ -191,7 +191,7 @@ const audioManager = (() => {
     ctx.beginPath();
     ctx.moveTo(0, 10);
     ctx.lineTo(300, 10);
-    ctx.stroke();
+    ctx.beginPath();
   }
   let canvas = document.getElementById("lineaCanvas1");
   let ctx = canvas.getContext("2d");
