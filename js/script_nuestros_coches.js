@@ -142,7 +142,7 @@ const audioManager = (() => {
       ctx.lineJoin = 'round';
   
       ctx.beginPath();
-      ctx.moveTo(15, 25);
+      ctx.moveTo(15, 30);
       ctx.lineTo(15, 5);
       ctx.lineTo(5, 15);
       ctx.moveTo(15, 5);
@@ -185,7 +185,28 @@ const audioManager = (() => {
     };
   })();
 
-  // Sección 3: Configuración menú movil
+  //Sección 3: Dibujar lineas Canvas
+  function lineaRecta(canvas){
+    ctx.lineWidth = 5;
+    ctx.beginPath();
+    ctx.moveTo(0, 10);
+    ctx.lineTo(300, 10);
+    ctx.stroke();
+  }
+  let canvas = document.getElementById("lineaCanvas1");
+  let ctx = canvas.getContext("2d");
+  lineaRecta(canvas);
+  
+  canvas = document.getElementById("lineaCanvas2");
+  ctx = canvas.getContext("2d");
+  lineaRecta(canvas);
+
+  canvas = document.getElementById("lineaCanvas3");
+  ctx = canvas.getContext("2d");
+  lineaRecta(canvas);
+
+
+  // Sección 4: Configuración menú movil
   function quitarMenu() {
     let menuCheckbox = document.getElementById('checkbox');
     menuCheckbox.checked = false;

@@ -109,6 +109,11 @@ article h2 {
     font-size: xxx-large;
 }
 
+.lineasCanvas{
+    width: 70%;
+    height: 21px;
+}
+
 .duo_imagenes {
     display: flex;
 }
@@ -177,7 +182,6 @@ article h2 {
     opacity: 1;
 }
 
-/* Scroll to top button */
 #botonSubir {
     position: fixed;
     bottom: 20px;
