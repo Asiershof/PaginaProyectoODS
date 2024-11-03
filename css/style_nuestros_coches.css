@@ -25,26 +25,15 @@ header #logo {
 }
 
 header #logo img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 132px;
+    margin: 0px 0px 0px 40px;
 }
 
-header #logo #contenedorCocheCanvas {
-    position: relative;
-    width: 240px;
-    height: 240px;
-    margin: 0 auto;
-}
-
-canvas#cocheCanvas {
+header #cocheCanvas {
+    left: 0px;
+    margin: 50px 0px 0px 47px;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    height: 80px;
 }
 
 nav {
@@ -124,11 +113,6 @@ article h2 {
     width: 100%;
     margin-top: 50px;
     font-size: xxx-large;
-}
-
-.lineasCanvas{
-    width: 70%;
-    height: 21px;
 }
 
 .duo_imagenes {

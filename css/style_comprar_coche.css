@@ -24,10 +24,16 @@ header #logo {
   align-items: center;
 }
 
-header #logo img {
-  height: 80%;
-  object-fit: contain;
-  margin-left: 40px;
+header #logo img{
+  height: 132px;
+  margin: 0px 0px 0px 40px;
+}
+
+header #cocheCanvas {
+  left: 0px;
+  margin: 50px 0px 0px 47px;
+  position: absolute;
+  height: 80px;
 }
 
 nav {

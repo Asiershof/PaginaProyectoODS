@@ -131,6 +131,7 @@ const audioManager = (() => {
     };
   })();
   
+  
   // Sección 2: Gestión del Botón de Subir y Canvas
   const scrollManager = (() => {
     // Dibuja la flecha en el canvas
@@ -185,27 +186,8 @@ const audioManager = (() => {
     };
   })();
 
-  //Sección 3: Dibujar lineas Canvas
-  function lineaRecta(canvas){
-    ctx.lineWidth = 5;
-    ctx.beginPath();
-    ctx.moveTo(0, 10);
-    ctx.lineTo(300, 10);
-    ctx.beginPath();
-  }
-  let canvas = document.getElementById("lineaCanvas1");
-  let ctx = canvas.getContext("2d");
-  lineaRecta(canvas);
-  
-  canvas = document.getElementById("lineaCanvas2");
-  ctx = canvas.getContext("2d");
-  lineaRecta(canvas);
 
-  canvas = document.getElementById("lineaCanvas3");
-  ctx = canvas.getContext("2d");
-  lineaRecta(canvas);
-
-  //Sección 4: Dibujar Coche Canvas
+  //Sección 3: Dibujar Coche Canvas
   canvas = document.getElementById("cocheCanvas");
   ctx = canvas.getContext("2d");
 
@@ -289,7 +271,8 @@ const audioManager = (() => {
       dibujarLuces(220, 130, 15, "#FFFFFF");
   });
 
-  // Sección 5: Configuración menú movil
+
+  // Sección 4: Configuración menú movil
   function quitarMenu() {
     let menuCheckbox = document.getElementById('checkbox');
     menuCheckbox.checked = false;
