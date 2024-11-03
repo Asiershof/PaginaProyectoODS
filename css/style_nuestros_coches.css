@@ -263,6 +263,11 @@ footer {
     font-size: larger;
 }
 
+.enlaceCopy{
+    text-decoration: none;
+    color: black;
+} 
+
 /*Estilos Ordenador*/
 @media (min-width: 1024px) {
     #menu>li {

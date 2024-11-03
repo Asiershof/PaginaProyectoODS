@@ -21,18 +21,18 @@ header {
     background: linear-gradient(to bottom, #b9b9b9, #949494);
 }
 
-header #logo {
+#logo {
     width: 40%;
     display: flex;
     align-items: center;
 }
 
-header #logo img{
+#logo img {
     height: 132px;
     margin: 0px 0px 0px 40px;
 }
 
-header #cocheCanvas {
+#cocheCanvas {
     left: 0px;
     margin: 50px 0px 0px 47px;
     position: absolute;
@@ -188,6 +188,11 @@ footer {
     margin-top: 20px;
     font-size: larger;
 }
+
+.enlaceCopy{
+    text-decoration: none;
+    color: black;
+}   
 
 /*Estilos Ordenador*/
 @media (min-width: 1024px) {
